@@ -1,0 +1,11 @@
+alphabet: {0, 1}
+start: q0_q5
+accepting: {q0_q5, q0_q3_q4_q5}
+
+q0_q5 (0 -> q2_q4) (1 -> dead)
+dead (0 -> dead) (1 -> dead)
+q2_q4 (0 -> q1_q2) (1 ->q3_q4)
+q1_q2 (0 -> q1_q2) (1 -> q0_q5)
+q3_q4 (0 -> dead) (1 -> q0_q3_q4_q5)
+q0_q3_q4_q5 (0 -> q2_q4) (1 -> q0_q3_q4_q5)
+

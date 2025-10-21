@@ -1,0 +1,8 @@
+alphabet: {a, b}
+start: q0_q2
+accepting: {q0_q2, q0_q1_q2}
+
+q0_q2 (a -> dead) (b -> q0_q1_q2)
+dead (a -> dead) (b -> dead)
+q0_q1_q2 (a -> q1_q2) (b -> q0_q1_q2)
+q1_q2 (a -> q1_q2) (b -> q0_q2)
